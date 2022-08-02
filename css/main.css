@@ -91,14 +91,13 @@ main #service .inner .contents a.more {
   width: 100px;
 }
 main #service .inner .contents a.more::before{
-  right: 0;
-  top: 30%;
   background-color: #000;
 }
-main #service .inner .contents a.more::after{
+main #service .inner .contents a.more::before, main #service .inner .contents a.more::after{
   right: 0;
   top: 30%;
 }
+
 
 
 /* space */
