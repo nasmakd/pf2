@@ -137,10 +137,10 @@ main #service .inner .contents a.more::after{
 }
 #space .inner a::before{
   background-color: #fff;
-  left: 106px;
+  left: 101px;
   top: 30%;
 }
 #space .inner a::after{
-  left: 140px;
+  left: 130px;
   top: 30%;
 }
