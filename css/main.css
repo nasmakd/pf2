@@ -112,3 +112,65 @@ main #service .inner .contents a.more::after{
   right: 0;
   top: 30%;
 }
+
+/* space */
+#space{
+  position: relative;
+  padding: 260px 0 100px;
+}
+#space .inner{
+  height: 880px;
+  margin-left: 0;
+  width: 90%;
+  background-image: url(../img/main-space-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-left: 15%;
+}
+#space .inner h2{
+  font-size: 165px;
+  font-weight: 800;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+#space .inner p{
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+#space .inner a{
+  position: relative;
+  font-size: 14px;
+}
+#space .inner > *:not(h2){
+  color: #fff;
+}
+#space .inner a::before{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 105px;
+  top: 30%;
+  transform: translateY(-50%);
+}
+#space .inner a::after{
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 3px solid #fff;
+  border-left: transparent;
+  border-top: transparent;
+  transform: translateY(-50%) rotate(-45deg);
+  position: absolute;
+  left: 140px;
+  top: 30%;
+}
