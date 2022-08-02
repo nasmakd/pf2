@@ -89,26 +89,11 @@ main #service .inner .contents a.more {
   padding-right: 50px;
 }
 main #service .inner .contents a.more::before{
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
-  background-color: #000;
-  position: absolute;
   right: 0;
   top: 30%;
-  transform: translateY(-50%);
+  background-color: #000;
 }
 main #service .inner .contents a.more::after{
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  border: 3px solid #000;
-  border-left: transparent;
-  border-top: transparent;
-  transform: translateY(-50%) rotate(-45deg);
-  position: absolute;
   right: 0;
   top: 30%;
 }
@@ -126,7 +111,7 @@ main #service .inner .contents a.more::after{
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-  padding-left: 15%;
+  padding-left: 17%;
 }
 #space .inner h2{
   font-size: 165px;
@@ -138,7 +123,6 @@ main #service .inner .contents a.more::after{
 }
 #space .inner p{
   font-weight: 700;
-  font-size: 52px;
   line-height: 1.2;
   margin-bottom: 40px;
   margin-top: 50px;
@@ -146,31 +130,17 @@ main #service .inner .contents a.more::after{
 #space .inner a{
   position: relative;
   font-size: 14px;
+  font-weight: 600;
 }
 #space .inner > *:not(h2){
   color: #fff;
 }
 #space .inner a::before{
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
   background-color: #fff;
-  position: absolute;
-  left: 105px;
+  left: 106px;
   top: 30%;
-  transform: translateY(-50%);
 }
 #space .inner a::after{
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  border: 3px solid #fff;
-  border-left: transparent;
-  border-top: transparent;
-  transform: translateY(-50%) rotate(-45deg);
-  position: absolute;
   left: 140px;
   top: 30%;
 }
