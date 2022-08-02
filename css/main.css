@@ -97,6 +97,9 @@ main #service .inner .contents a.more::after{
   right: 0;
   top: 30%;
 }
+main #service .inner .contents a.more span.hexagon{
+  right: -13px;
+}
 
 /* space */
 #space{
@@ -137,10 +140,43 @@ main #service .inner .contents a.more::after{
 }
 #space .inner a::before{
   background-color: #fff;
-  left: 101px;
+  left: 100px;
   top: 30%;
 }
 #space .inner a::after{
-  left: 130px;
+  left: 132px;
   top: 30%;
+}
+#space .inner a span.hexagon{
+  left: 113px;
+}
+
+/*  view more hexagon animation */
+a span.hexagon{
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-image: url(../img/hexagon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50% - 15px);
+  transform-origin: 51% 55%;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+a:hover span.hexagon{
+  animation-name: hexagon;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 1;
+}
+@keyframes hexagon {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }

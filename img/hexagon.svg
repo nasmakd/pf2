@@ -4,7 +4,7 @@
 <svg
    width="417.85693"
    height="362.56305"
-   viewBox="0 0 110.55798 95.92814"
+   viewBox="0 0 110 110"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
@@ -42,7 +42,7 @@
      transform="translate(-0.12360768,-0.42554324)">
     <path
        sodipodi:type="star"
-       style="fill:#6c5353;stroke-width:0.264583"
+       style="fill:#c1c4aa;stroke-width:0.264583"
        id="path111"
        inkscape:flatsided="true"
        sodipodi:sides="6"

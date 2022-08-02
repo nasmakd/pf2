@@ -115,6 +115,7 @@ a.more::before{
   height: 2px;
   position: absolute;
   transform: translateY(-50%);
+  z-index: 5;
 }
 a.more::after{
   content: "";
@@ -126,4 +127,5 @@ a.more::after{
   border-top: transparent;
   transform: translateY(-50%) rotate(-45deg);
   position: absolute;
+  z-index: 5;
 }
