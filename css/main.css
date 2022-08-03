@@ -10,11 +10,9 @@ main #service .inner hgroup {
   margin-bottom: 50px;
 }
 main #service .inner hgroup h2 {  
-  color: #666;
-  font-weight: 700;
+  color: #aaa;
 }
 main #service .inner hgroup h3 {
-  font-size: 50px;
   line-height: 2;
 }
 main #service .inner .contents {
@@ -79,7 +77,7 @@ main #service .inner .contents article a h4 {
 main #service .inner .contents article a p {
   color: #666;
 }
-main #service .inner .contents a.more {
+main #service .inner .contents a.more{
   position: absolute;
   display: block;
   bottom: 0;
@@ -90,13 +88,8 @@ main #service .inner .contents a.more {
   font-size: 14px;
   width: 100px;
 }
-main #service .inner .contents a.more::before{
-  background-color: #000;
-}
-main #service .inner .contents a.more::before, main #service .inner .contents a.more::after{
-  right: 0;
-  top: 30%;
-}
+
+
 
 
 
@@ -142,10 +135,7 @@ main #service .inner .contents a.more::before, main #service .inner .contents a.
 #space .inner a::before{
   background-color: #fff;
 }
-#space .inner a::before, #space .inner a::after{
-  right: 0;
-  top: 30%;
-}
+
 
 /*  view more hexagon animation */
 a span.hexagon{
@@ -176,4 +166,73 @@ a:hover span.hexagon{
   100%{
     transform: rotate(360deg);
   }
+}
+
+/* brand story */
+#brand {
+ 
+}
+#brand .inner {
+ 
+}
+#brand .inner hgroup {
+  
+}
+#brand .inner hgroup h2 {
+  color: #aaa;
+}
+#brand .inner hgroup h3 {
+  line-height: 2;
+}
+#brand .inner hgroup h4 {
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: 140px;
+}
+#brand .inner ul.contents {
+  width: 90%;
+  margin-bottom: 100px;
+}
+#brand .inner ul.contents li {
+  flex-grow: 1;
+  width: calc(100% / 3);
+}
+#brand .inner ul.contents li:nth-child(2){
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+#brand .inner ul.contents li::before{
+  content: "";
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+#brand .inner ul.contents li:nth-child(1):before{
+  background-image: url(../img/bs_keep.svg);
+}
+#brand .inner ul.contents li:nth-child(2):before{
+  background-image: url(../img/bs_clean.svg);
+}
+#brand .inner ul.contents li:nth-child(3):before{
+  background-image: url(../img/bs_green.svg);
+}
+#brand .inner ul.contents li h5 {
+  margin: 40px 0 20px 0;
+}
+#brand .inner ul.contents li p {
+ color: #666;
+}
+#brand .inner a.more {
+  position: relative;
+  display: block;
+  padding-right: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  width: 100px;
+}
+#brand .inner a.more span.hexagon {
+  
 }
