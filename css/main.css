@@ -79,14 +79,9 @@ main #service .inner .contents article a p {
 }
 main #service .inner .contents a.more{
   position: absolute;
-  display: block;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  font-weight: 600;
-  padding-right: 50px;
-  font-size: 14px;
-  width: 100px;
 }
 
 
@@ -123,11 +118,6 @@ main #service .inner .contents a.more{
   margin-top: 50px;
 }
 #space .inner a{
-  position: relative;
-  font-size: 14px;
-  font-weight: 600;
-  width: 100px;
-  padding-right: 50px;
 }
 #space .inner > *:not(h2){
   color: #fff;
@@ -170,7 +160,7 @@ a:hover span.hexagon{
 
 /* brand story */
 #brand {
- 
+
 }
 #brand .inner {
  
@@ -190,7 +180,7 @@ a:hover span.hexagon{
   margin-bottom: 140px;
 }
 #brand .inner ul.contents {
-  width: 90%;
+  width: 100%;
   margin-bottom: 100px;
 }
 #brand .inner ul.contents li {
@@ -204,11 +194,10 @@ a:hover span.hexagon{
 #brand .inner ul.contents li::before{
   content: "";
   display: block;
-  height: 100px;
-  width: 100px;
+  height: 110px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center;
 }
 #brand .inner ul.contents li:nth-child(1):before{
   background-image: url(../img/bs_keep.svg);
@@ -226,13 +215,47 @@ a:hover span.hexagon{
  color: #666;
 }
 #brand .inner a.more {
-  position: relative;
-  display: block;
-  padding-right: 50px;
-  font-weight: 600;
-  font-size: 14px;
-  width: 100px;
+
 }
 #brand .inner a.more span.hexagon {
+  
+}
+
+/* miele */
+
+#miele {
+  position: relative;
+  padding: 260px 0 100px;
+}
+#miele .inner {
+  height: 880px;
+  margin-left: 0;
+  width: 90%;
+  background-image: url(../img/main-miele-01-1722x850.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-left: 17%;
+  color: #fff;
+}
+#miele .inner h2 {
+}
+#miele .inner h2 small {
+  line-height: 2.8;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 20px;
+}
+#miele .inner p {
+  line-height: 1.2;
+  margin: 10px 0 50px 0;
+}
+#miele .inner a.more {
+  
+}
+#miele .inner a.more::before{
+  background-color: #fff;
+}
+#miele .inner a.more span.hexagon {
   
 }
