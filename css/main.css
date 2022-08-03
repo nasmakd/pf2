@@ -84,12 +84,8 @@ main #service .inner .contents a.more{
   transform: translateX(-50%);
 }
 
-
-
-
-
 /* space */
-#space, #miele{
+#space{
   position: relative;
   padding: 260px 0 100px;
 }
@@ -125,7 +121,6 @@ main #service .inner .contents a.more{
 #space .inner a::before{
   background-color: #fff;
 }
-
 
 /*  view more hexagon animation */
 a span.hexagon{
@@ -224,22 +219,24 @@ a:hover span.hexagon{
 /* miele */
 
 #miele {
-
+  position: relative;
 }
 #miele .inner {
   background-image: url(../img/main-miele-01-1722x850.jpg);
   color: #fff;
+  
 }
+
 #miele .inner h2 {
 
 }
-#miele .inner h2 small {
+#miele .inner h2 small{
   line-height: 2.8;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
   font-size: 20px;
 }
-#miele .inner p {
+#miele .inner p, #contact .inner p {
   line-height: 1.2;
   margin: 10px 0 50px 0;
 }
@@ -251,4 +248,53 @@ a:hover span.hexagon{
 }
 #miele .inner a.more span.hexagon {
   
+}
+#miele .inner::after{
+ content: "";
+ width: 30%;
+ height: 120px;
+ position: absolute;
+ right: 0;
+ bottom: 0; 
+ background-color: #767c69;
+ z-index: -1;
+}
+
+/* contact */
+#contact{
+  position: relative;
+  padding: 200px 0;
+}
+#contact::after{
+  content: "";
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0; 
+  background-color: #767c69;
+  z-index: -1;
+ }
+#contact .inner{
+  position: relative;
+  padding-top: 130px;
+}
+#contact .inner h2 small{
+  color: #aaa;
+  line-height: 3;
+}
+#contact .inner p{
+  line-height: 1.8;
+  color: #666;
+}
+#contact .inner::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 620px;
+  height: 713px;
+  background-image: url(../img/main-register-01.jpg);
+  background-size: cover;
 }
