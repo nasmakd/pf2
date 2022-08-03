@@ -89,11 +89,11 @@ main #service .inner .contents a.more{
 
 
 /* space */
-#space{
+#space, #miele{
   position: relative;
   padding: 260px 0 100px;
 }
-#space .inner{
+#space .inner, #miele .inner{
   height: 880px;
   margin-left: 0;
   width: 90%;
@@ -224,21 +224,14 @@ a:hover span.hexagon{
 /* miele */
 
 #miele {
-  position: relative;
-  padding: 260px 0 100px;
+
 }
 #miele .inner {
-  height: 880px;
-  margin-left: 0;
-  width: 90%;
   background-image: url(../img/main-miele-01-1722x850.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  padding-left: 17%;
   color: #fff;
 }
 #miele .inner h2 {
+
 }
 #miele .inner h2 small {
   line-height: 2.8;
