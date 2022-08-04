@@ -105,6 +105,10 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.padding150{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
 
 /* 버튼 */
 .btn1{

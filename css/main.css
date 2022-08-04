@@ -298,3 +298,64 @@ a:hover span.hexagon{
   background-image: url(../img/main-register-01.jpg);
   background-size: cover;
 }
+
+/* insta */
+#insta {
+ background-color: #222;
+ 
+}
+#insta .inner {
+ row-gap: 30px;
+}
+#insta .inner h2 {
+ color: #fff;
+}
+#insta .inner ul.contents {
+  gap: 30px;
+  flex-wrap: wrap;
+}
+#insta .inner ul.contents li {
+ flex-basis: calc((100% / 4) - 90px / 4);
+}
+#insta .inner ul.contents li a {
+ position: relative;
+ display: block;
+}
+#insta .inner ul.contents li a::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.2;
+  transition: opacity 700ms;
+}
+#insta .inner ul.contents li a:hover::before{
+  opacity: 1;
+}
+#insta .inner ul.contents li a figure {
+ 
+}
+#insta .inner ul.contents li a figure img {
+ 
+}
+#insta .inner ul.contents li a p {
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 700ms;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#insta .inner ul.contents li a:hover p{
+  opacity: 1;
+}
