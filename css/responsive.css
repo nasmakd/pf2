@@ -124,7 +124,7 @@
   }
   #space .inner, #miele .inner, #contact .inner{
     width: 100%;
-    height: 114.58vw;
+    height: auto;
     padding-left: 10%;
     padding-right: 10%;
     margin-left: 0;
@@ -170,7 +170,31 @@
   #brand .inner ul.contents li:nth-child(2){
     border: none;
   }
-
+/*  miele  */
+  #miele .inner{
+    
+  color: #000;
+  padding-top: 0;
+  overflow: hidden;
+  }
+  #miele .inner::before{
+    content: "";
+    display: block;
+    height: 39vw;
+    background-image: url(../img/main-miele-01-1722x850.jpg);
+    width: 100%;
+    background-size: cover;
+    transform: scaleX(1.3);
+  }
+  #miele .inner h2{
+    
+  }
+  #miele .inner h2 small{
+    color: rgba(0,0,0,0.5)
+  }
+  #miele .inner a.more::before{
+    background-color: #000;
+  }
     
 
     
