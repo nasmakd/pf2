@@ -1,0 +1,185 @@
+@media screen and (max-width: 1920px){
+  #space .inner h2{
+    font-size: 8.59vw;
+  }
+}
+@media screen and (max-width: 1200px){
+  
+}
+@media screen and (max-width: 768px) {
+/*  공통 스타일 hn스타일링  */
+  .h1{
+  font-size: 80px;
+  font-weight: 700;
+}
+.h2{
+  font-size: 33px;
+  font-weight: 800;
+}
+.h3{
+  font-size: 31px;
+  font-weight: 700;
+}
+.h4{
+  font-size: 25px;
+  font-weight: 700;
+}
+.h5{
+  font-size: 20px;
+  font-weight: 700;
+}
+/*  padding  */
+ .padding50{
+  padding: 6.51vw;
+}
+.padding100{
+  padding-top: 13.02vw;
+  padding-bottom: 13.02vw;
+}
+.padding150{
+  padding-top: 19.53vw;
+  padding-bottom: 19.53vw;
+}
+  
+  header .inner{
+    height: 15vw;
+    width: 90%;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding-top:20px;
+  }
+  header .inner h1 a{
+    font-size: 3.64583vw;
+  }
+  header .inner .wgnb{
+    position: absolute;
+    left: 0;
+    top: 
+  calc(50% - 13.5px); 
+  }
+  header .inner ul.enb{
+    display: none;
+  }
+  header .inner .wgnb a.ham{
+    transform: scale(0.9);
+  }
+  
+/*  타이틀  */
+  #title::before{
+    width: 100%;
+  }
+  #title .inner{
+    height: 92vw;
+    height: 80%;
+    justify-content: flex-start;
+  }
+  #title .inner h2{
+    order: 2;
+    font-size: 7.16vw;
+    margin-top: 23px;
+  }
+  #title .inner p{
+    order: 3;
+    font-size: 3.125vw;
+  }
+  #title .inner .video{
+    height: 47vw;
+    position: static;
+    width: 100%;
+    order: 1;
+  }
+  
+/*  서비스  */
+  main #service .inner hgroup h2{
+    
+  }
+  main #service .inner hgroup h3{
+    line-height: 1.2;
+    text-align: center;
+  }
+  main #service .inner .contents article{  
+  width: 100%;
+  transform: initial !important;
+  }
+  main #service .inner .contents article a::before{
+    
+  height: 77.4739vw;
+  }
+  main #service .inner .contents{
+    
+  row-gap: 19.53vw;
+  padding-bottom: 26.041vw;
+  }
+/*  스페이스  */
+  #space{
+  padding: 13.54vw 0 5.2vw;
+  }
+
+  #space .inner::before{
+    content: "";
+    display: block;
+    height: 200px;
+    background-image: url(../img/main-space-01.jpg);
+  }
+  #space .inner, #miele .inner, #contact .inner{
+    width: 100%;
+    height: 114.58vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 0;
+    background-image: none;
+    background-color: #ccc;
+  }
+  #space .inner{
+    
+  /*! height: calc(48.58vw + 70.41vw); */
+  padding-top: 0;
+  padding-bottom: 0;
+  height: auto;
+  }
+  #space .inner > :not(h2){
+    color: #000;
+  }
+  #space .inner a::before{
+    background-color: #000;
+  }
+  #space .inner p{
+    
+  font-size: 25px;
+  }
+/*  브랜드 스토리  */
+  #brand .inner hgroup h3{
+    line-height: 1;
+    margin-top: 10px; 
+  }
+  #brand .inner hgroup h4{
+  margin-bottom: 18.2vw;
+  line-height: 1.2;
+  margin-top: 10px;
+  font-size: 22px;
+  }
+  #brand .inner ul.contents{
+  flex-direction: column;
+  row-gap: 50px;
+  margin-bottom: 13.02vw;
+  }
+  #brand .inner ul.contents li{
+  width: 100%;
+  }
+  #brand .inner ul.contents li:nth-child(2){
+    border: none;
+  }
+
+    
+
+    
+
+  
+}
+
+
+
+
+
+
