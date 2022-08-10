@@ -9,17 +9,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/ham.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // console.log($(window).height());
+            let n=0; //변수 let에 0을 넣어라 (변수 선언과 초기화)
+            $("header .inner .wgnb a.ham").click(function(){
+                // $(this).addClass("hamRotate");   
+                if(n==0){
+                    $("div.menuback").remove();
+                    $("#top").prepend("<div class='menuback'></div>");
+                    $(".menuback").css({"height":$(window).height()});
+                    n=1;
+                }else{
+                    $(".menuback").addClass("menubackMove");
+                    n=0;
+                }
+                return false;
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- 상단 영역 -->
-    <header>
+    <header id="top">
         <!-- div.inner>(h1>a)+(ul.gnb>li*5>(h2>a)+ul.gnbsub>li*3>a)+ul.enb>li*2>a -->
         <div class="inner flex flexBetween flexAlignEnd">
             <h1><a href=""><img src="img/logo2.svg" alt="urban launderette logo">URBAN LAUNDERETTE</a></h1>
@@ -268,7 +289,7 @@
                     <p>어반런드렛 더 테라스031-261-8725</p>
                     <p>어반런드렛 서초/청담1644-5982</p>
                 </div>
-                <address>(주)제이피 이노베이션 경기도 성남시 수정구 창업로42, 경기기업성장센터 819호<br />사업자등록번호 456-87-00752대표이사 : 손수정</address>
+                <address>(주)제이피 이노베이션<span class="br"></span> 경기도 성남시 수정구 창업로42, 경기기업성장센터 819호<br />사업자등록번호 456-87-00752대표이사 : 손수정</address>
                 <ul class="bnb flex">
                     <li><a href="">개인정보처리방침</a></li>
                     <li><a href="">이용약관</a></li>
@@ -284,9 +305,9 @@
                 </ul>
                 <a href="mailto:contact@jpinnovation.kr" class="email">contact@jpinnovation.kr</a>
             </div>
-            <a href="#title" class="more top">맨 위로 가기</a>
+            
         </div>
-
+        <a href="#title" class="more top">맨 위로 가기</a>
     </footer>
 </body>
 </html>

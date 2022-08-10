@@ -1,0 +1,24 @@
+.menuback{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    animation-name: scaleWide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform-origin: 0;
+    transition: left 0.5s;
+}
+@keyframes scaleWide {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.menubackMove{
+    left: 100%;
+}

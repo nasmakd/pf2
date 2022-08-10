@@ -11,6 +11,7 @@ main {
 }
 main #service {
 
+  background-color: #ccc;
 }
 main #service .inner {
 }
@@ -96,6 +97,7 @@ main #service .inner .contents a.more{
 #space{
   position: relative;
   padding: 260px 0 100px;
+  background-color: #ccc;
 }
 #space .inner, #miele .inner{
   height: 880px;
@@ -295,7 +297,7 @@ a:hover span.hexagon{
   line-height: 1.8;
   color: #666;
 }
-#contact .inner::after{
+#contact .inner::before{
   content: "";
   display: block;
   position: absolute;
@@ -314,7 +316,7 @@ a:hover span.hexagon{
 }
 #insta .inner {
  row-gap: 30px;
- padding: 0 100px;
+ /*! padding: 0 100px; */
  box-sizing: border-box;
 }
 #insta .inner h2 {
@@ -326,6 +328,7 @@ a:hover span.hexagon{
 }
 #insta .inner ul.contents li {
  flex-basis: calc((100% / 4) - 120px / 4);
+  width:  calc((100% / 4) - 120px / 4);
 }
 #insta .inner ul.contents li a {
  position: relative;

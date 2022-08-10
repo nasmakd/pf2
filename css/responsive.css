@@ -89,6 +89,9 @@
     width: 100%;
     order: 1;
   }
+  #title span.titleAside{
+    display: none;
+  }
   
 /*  서비스  */
   main #service .inner hgroup h2{
@@ -130,6 +133,7 @@
     margin-left: 0;
     background-image: none;
     background-color: #ccc;
+    box-sizing: border-box;
   }
   #space .inner{
     
@@ -195,8 +199,91 @@
   #miele .inner a.more::before{
     background-color: #000;
   }
+/*  contact  */
+  #contact{
+  background-color: #ccc;
+  padding: 100px 0;
+  }
+  #contact::after{
     
+  height: 20%;
+  width: 100%;
+  top: 0;
+  bottom: auto;
+  z-index: 0;
+  }
+  
+  
+  #contact .inner{
+    height: auto;
+    z-index: 1;
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #contact .inner::after{
+  position: static;
+  width: 100%;
+  height: 91.14583vw;
+  }
+  #contact .inner h2{
+    font-size: 30px;
+  }
+  #contact .inner::before{
+  z-index: 0;
+  width: 100%;
+  height: 358px;
+  top: 0;
+  bottom: initial;
+  position: static;
+  }
+  #contact .inner h2 br:nth-of-type(2){
+    display: none;
+  }
+  
+/*  insta  */
+  #insta .inner{
+    width: 90%;
+    margin-right: 0;
+    overflow-x: auto;
+  }
+  #insta .inner ul.contents{
+    gap: 0;
+    flex-wrap: initial;
+    width: calc(533.33%);
+  }
+  #insta .inner ul.contents li{
+    flex-basis: initial;
+    box-sizing: border-box;
+    padding-right: 30px;
+  }
 
+/*  하단  */
+  #footer .inner{
+    display: block
+  }
+  #footer .inner .left address{
+    
+  margin-bottom: 50px;
+  margin-top: 30px;
+  }
+  #footer .inner .left address span.br{
+    display: block;
+  }
+  #footer .inner .left ul.bnb li a{
+    font-size: 12px;
+    letter-spacing: -1px;
+    padding: 15px 5px;
+  }
+  #footer .inner .right ul.sns{
+  margin-bottom: 50px;
+  justify-content: initial;
+  gap: 10px;
+  margin-top: 15px;
+  }
+  #footer .inner .right a.email::before{
+    
+  }
     
 
   

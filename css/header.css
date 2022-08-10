@@ -5,6 +5,7 @@ header {
   position: relative;
   transform: translateY(120px);
   margin-top: -120px;
+
 }
 header a{
   color: #fff;
@@ -12,8 +13,9 @@ header a{
 header .inner {
   width: 95%;
   height: 100px;
-  padding-top: 44px;
+  /* padding-top: 44px; */
   align-items: flex-end;
+  position: relative;
 }
 header .inner h1 {
   /*! position: absolute; */
@@ -58,6 +60,7 @@ header .inner h1 a img{
 header .inner ul.gnb {
  align-self: first baseline; 
 }
+
 header .inner ul.gnb li {
   
 }

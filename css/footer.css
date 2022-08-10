@@ -15,15 +15,7 @@
     position: relative;
     align-items: flex-end;
 }
-#footer .inner::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 80px;
-    width: 100%;
-    height: 1px;
-    background-color: #4d4d4d;
-}
+
 #footer .inner .left {
 
 }
@@ -55,6 +47,10 @@
     font-size: 14px;
     color: #888;;
 }
+#footer .inner .left address span.br{
+    display: none;
+}
+
 #footer .inner .left ul.bnb {
    
 }
@@ -107,31 +103,40 @@
 #footer .inner .right a.email{
     color: #888;;
 }
+#footer .inner .right a.email::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #4d4d4d;
+    transform: translateY(-35px);
+}
 
 
-#footer .inner a.top{
+#footer a.top{
     font-size: 0;
     position: absolute;
     width: 50px;
     height: 50px;
     background-color: #111;
-    top: -125px;
+    top: -25px;
     left: calc(50% - 15px);    
     padding-right: 0;
     transform: rotate(-90deg);
     transition: background-color 500ms;
 }
-#footer .inner a.top:hover{
+#footer a.top:hover{
     background-color: #444;
 }
-#footer .inner a.top::before{
+#footer a.top::before{
     width: 20px;
     background-color: #fff;
     right: calc(50% - 10px);
     top: calc(50% - 1px);
     
 }
-#footer .inner a.top::after{
+#footer a.top::after{
     right: 13px;
     top: calc(50% - 1px);
 }
