@@ -10,15 +10,47 @@
     animation-fill-mode: forwards;
     transform-origin: 0;
     transition: left 0.5s;
+    overflow: hidden;
 }
 @keyframes scaleWide {
     0%{
-        transform: scaleX(0);
+        width: 0;
     }
     100%{
-        transform: scaleX(1);
+        width: 100%;
     }
 }
 .menubackMove{
     left: 100%;
+}
+.menuback .wrapsns{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.menuback .copyright{
+    color: #fff;
+    overflow: hidden;
+}
+.menuback .copyright span{
+    transform: translateY(100%);
+    display: block;
+    transition: transform 1s;
+    transition-delay: 1s;
+}
+.menuback .copyright a{
+    display: inline-block;
+}
+.menuback .sns{
+
+    overflow: hidden;
+}
+.menuback .sns li{
+    transform: translateY(100%);
+    transition: transform 1s;
+    transition-delay: 1s;
 }
